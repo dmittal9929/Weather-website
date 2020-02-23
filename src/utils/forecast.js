@@ -9,7 +9,7 @@ const forecast = (latitude , longitude,callback)=>{
             callback("unable to find location",undefined)
         }
         else{
-            callback(undefined,body.daily.data[0].summary + "the temperature is " + body.currently.temperature +"C and is currently "+body.currently.summary)
+            callback(undefined,body.daily.data[0].summary + " The temperature is " + body.currently.temperature +" degrees and is currently "+body.currently.summary +"\r\nThe chance of rain in " + body.currently.precipProbability + "%")
         }
     })
 };
