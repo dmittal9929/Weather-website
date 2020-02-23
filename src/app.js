@@ -82,14 +82,14 @@ app.get('',(req,res)=>{
 
 app.get('/about',(req,res)=>{
    res.render('about',{
-       title:'about',
+       title:'About',
        name:'Dhruv Mittal'
    })
 });
 
 app.get('/help',(req,res)=>{
    res.render('help',{
-       title:'help',
+       title:'Help',
        name:'Dhruv Mittal',
        message:'this is the sample help message'
    })
